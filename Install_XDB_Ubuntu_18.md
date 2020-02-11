@@ -84,5 +84,5 @@ EOF
 ##### Start mysql to join the cluster
 ```
 systemctl start mysql
-``
+```
 
