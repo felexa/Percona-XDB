@@ -29,7 +29,10 @@ yum install -y Percona-XtraDB-Cluster-57
 ##### Initial set up
 ```
 systemctl start mysql
-grep password /var/log/mysqld.log
+grep password /var/log/mysqld.log   
+or  grep 'temporary password' /var/log/mysqld.log
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'rootPass';
+or
 mysql_secure_installation
 systemctl stop mysql
 ```
